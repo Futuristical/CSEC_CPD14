@@ -1,0 +1,9 @@
+a = input()
+b = 'a'
+c = 0
+for i in a:
+    d = abs(ord(i) - ord(b))    
+    e = min(d, 26 - d)
+    c += e  
+    b = i
+print(c)
